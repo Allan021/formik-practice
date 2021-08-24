@@ -1,13 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-contended {
+  display: flex;
+  width: 50%;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 5px #888888;
+}
+
+.form-input {
+  display: block;
+}
+
+.form-content {
+  width: 70%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-content > input {
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-content > input:focus {
+  border: 2px solid #1c5c99;
+}
+
+.form-content > .border-error {
+  border: 2px solid #c01927;
+}
+
+.error-message {
+  color: #c01927;
+  margin: -10px 0 20px 0;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.btn-submit {
+  padding: 10px;
+}
+
+.form-checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
